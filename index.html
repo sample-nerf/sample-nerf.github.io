@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180733097-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-180733097-1');
+  
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Differentiable Point Resampling and Ray Transformation Aid to Editable NeRF Models</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <style>
+  .section-title {
+    font-family: "Lato"
+  }
+  .authors {
+    font-family: "Lato";
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: "Lato";
+  }
+  </style>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Differentiable Point Resampling and Ray Transformation <br> Aid to Editable NeRF Models</h2>
+            <!-- <h4 style="color:#5a6268;">CVPR 2022</h4> -->
+            <hr>
+            <h6>
+              Anonymous
+            </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+            <!-- <img class="img-fluid" src="images/teasor.png" alt="teasor" height="60%"> -->
+          <p class="text-justify">
+            In NeRF-aided editing tasks, the removal operations of certain scene elements often lead to empty regions, presenting challenges for NeRF models in inpainting these scenes. Moreover, the movement of objects in practical applications presents significant difficulties in supervised learning for these models, as it introduces variability in object positions. To tackle these issues, we introduce a plug-and-play model, dubbed differentiable neural ray resampling (DNR), which interpolates occurring empty regions at the original ray locations within the implicit space, facilitating object removal & scene inpainting tasks. Importantly, employing DNR effectively bridges the gap between ground truth and predicted implicit feature distances, potentially increasing the mutual information of implicit features across rays. We propose a point-based editable NeRF pipeline, which leverages an implicit ray transformation for manipulating scene objects, and DNR enables effective inpainting of empty regions induced by transformations in various operational scenarios. Results primarily evaluated on 3D object removal & inpainting tasks indicate that our model achieves state-of-the-art performance. In addition, our pipeline offers versatility by supporting high-quality rendering visualization for diverse editing operations without requiring extra supervision.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">          
+          <h3>Demo Videos</h3>
+            <hr style="margin-top:1.cm">
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Rendering Results on SPIn-NeRF, IBRNet and Remove-NeRF data</h4>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                  <h4 class="title is-3"> xxx </h4>
+                  <video width="500" controls>
+                    <source src="" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <section class="hero is-light is-small">
+                <div class="hero-body">
+                  <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                      <div class="item item-steve">
+                        <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                          <source src="" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="item item-car">
+                        <video poster="" id="car" autoplay controls muted loop playsinline height="100%">
+                          <source src="" type="video/mp4">
+                        </video>
+                      </div>
+                  </div>
+                </div>
+              </section>
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Ray Transformations Novel Views Rendering</h4>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <h4 class="title is-3"> xxx </h4>
+                <video width="500" controls>
+                  <source src="" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">DNR initialization and Fine-tuning Optimization</h4>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <h4 class="title is-3"> xxx </h4>
+                <video width="500" controls>
+                  <source src="" type="video/mp4">
+                </video>
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <footer class="text-center">
+    <hr style="margin-top:0px">
+	  <div class="container">
+        <div class="row ">
+          <div class="col-12">
+			<!-- <h2>Citation</h2> -->
+			  <!-- <hr style="margin-top:0px"> -->
+			  <div class="card-footer">
+          xxx
+			  </div>
+			  <hr>
+		</div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
