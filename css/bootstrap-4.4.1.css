@@ -609,9 +609,9 @@ pre code {
 
 .row {
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   margin-right: -15px;
   margin-left: -15px;
 }

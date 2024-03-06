@@ -30,6 +30,22 @@
   h1, h2, h3, h4, h5, h6, p {
     font-family: "Lato";
   }
+  .video-container {
+    width: max(30%, 200px);
+    height: auto;
+    margin-inline: 0.5%;
+  } 
+ .video-title{
+    font-family: "Lato";
+    font-size: 1.2em;
+    color: #000;
+ }
+ .flex-container {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
   </style>
 
   <!-- cover -->
@@ -37,7 +53,7 @@
     <div class="jumbotron text-center mt-4">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-14">
             <h2>Differentiable Point Resampling and Ray Transformation <br> Aid to Editable NeRF Models</h2>
             <!-- <h4 style="color:#5a6268;">CVPR 2022</h4> -->
             <hr>
@@ -75,82 +91,74 @@
           <h3>Demo Videos</h3>
             <hr style="margin-top:1.cm">
             <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Rendering Results on SPIn-NeRF, IBRNet and Remove-NeRF data</h4>
+            <div class="row flex-container">
 
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h4 class="title is-3"> Scene trash </h4>
-                  <video autoplay controls muted loop playsinline width="500">
+                <div class="video-container">
+                  <h4 class="video-title"> Scene trash </h4>
+                  <video autoplay controls muted loop playsinline width="100%">
                     <source src="videos/sota/trash.mp4" type="video/mp4">
                   </video>
                 </div>
-              </div>
 
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h4 class="title is-3"> Scene book </h4>
-                  <video autoplay controls muted loop playsinline width="500">
+ 
+                <div class="video-container">
+                  <h4 class="video-title"> Scene book </h4> 
+                  <video autoplay controls muted loop playsinline width="100%">
                     <source src="videos/sota/book.mp4" type="video/mp4">
                   </video>
                 </div>
-              </div>
 
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h4 class="title is-3"> Scene 2 </h4>
-                  <video autoplay controls muted loop playsinline width="500">
+
+                <div class="video-container">
+                  <h4 class="video-title"> Scene 2 </h4> 
+                  <video autoplay controls muted loop playsinline width="100%">
                     <source src="videos/sota/2.mp4" type="video/mp4">
                   </video>
                 </div>
-              </div>
 
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h4 class="title is-3"> Scene 7 </h4>
-                  <video autoplay controls muted loop playsinline width="500">
+                <div class="video-container">
+                  <h4 class="video-title"> Scene 7 </h4> 
+                  <video autoplay controls muted loop playsinline width="100%">
                     <source src="videos/sota/7.mp4" type="video/mp4">
                   </video>
                 </div>
-              </div>
 
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h4 class="title is-3"> Scene 10 </h4>
-                  <video autoplay controls muted loop playsinline width="500">
+                <div class="video-container">
+                  <h4 class="video-title"> Scene 10 </h4> 
+                  <video autoplay controls muted loop playsinline width="100%">
                     <source src="videos/sota/10.mp4" type="video/mp4">
                   </video>
                 </div>
-              </div>
 
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h4 class="title is-3"> Scene 12 </h4>
-                  <video autoplay controls muted loop playsinline width="500">
+                <div class="video-container">
+                  <h4 class="video-title"> Scene 12 </h4> 
+                  <video autoplay controls muted loop playsinline width="100%">
                     <source src="videos/sota/12.mp4" type="video/mp4">
                   </video>
                 </div>
-              </div>
 
-            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Ray Transformations Novel Views Rendering</h4>
+                
+                
 
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h4 class="title is-3"> Scene book </h4>
-                  <video autoplay controls muted loop playsinline width="500">
-                    <source src="videos/ray_trans/book.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
-
-            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">DNR initialization and Fine-tuning Optimization</h4>
-
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h4 class="title is-3"> xxx </h4>
-                  <video width="500" controls>
+                <!-- <div class="video-container">
+                  <h4 class="video-title"> xxx </h4> 
+                  <video width="250" controls>
                     <source src="" type="video/mp4">
                   </video>
-                </div>
+                </div> -->
+
+        </div>
+
+            <hr style="margin-top:1.cm">
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Ray Transformations Novel Views Rendering</h4>
+            <div class="row flex-container">
+              <div class="video-container">
+                <h4 class="video-title"> Scene book </h4> 
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="videos/ray_trans/book.mp4" type="video/mp4">
+                </video>
               </div>
+            </div>
       </div>
     </div>
   </section>
