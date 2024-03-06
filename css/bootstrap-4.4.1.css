@@ -608,10 +608,11 @@ pre code {
 }
 
 .row {
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   /* display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; */
+  align-items: center;
   margin-right: -15px;
   margin-left: -15px;
 }
