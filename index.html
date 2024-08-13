@@ -78,9 +78,9 @@
           <p class="text-justify">
             Manipulating objects and inpainting empty regions in scenes are challenging for NeRF models due to limited manipulation supervision and difficulty in aligning geometry and appearance in an implicit representation. 
             We address these challenges by implementing a point-based NeRF pipeline that combines explicit point clouds with implicit volumes, providing a general solution for flexible object manipulation without additional supervision and enhances the interactions between manipulated regions and surrounding areas.
-            We explore an implicit \emph{Ray Manipulation (RM)} mechanism that allows for direct manipulation of a 3D object's pose by operating on neural points along NeRF rays. 
-            Additionally, we introduce a plug-and-play module for the inpainting process, dubbed \emph{Ray Interpolation (RI)}, which interpolates manipulated regions by aggregating features from surrounding rays to achieve coherent geometry and texture. 
-            Our proposed point-based NeRF pipeline, \model, incorporates ray transformation and interpolation, enabling high-quality visual rendering for diverse editing operations without requiring supervision. 
+            We explore an implicit Ray Manipulation (RM) mechanism that allows for direct manipulation of a 3D object's pose by operating on neural points along NeRF rays. 
+            Additionally, we introduce a plug-and-play module for the inpainting process, dubbed Ray Interpolation (RI), which interpolates manipulated regions by aggregating features from surrounding rays to achieve coherent geometry and texture. 
+            Our proposed point-based NeRF pipeline, RaMI-NeRF, incorporates ray transformation and interpolation, enabling high-quality visual rendering for diverse editing operations without requiring supervision. 
             Results on 3D object manipulation and scene inpainting tasks demonstrate that our pipeline achieves state-of-the-art performance.
           </p>
         </div>
