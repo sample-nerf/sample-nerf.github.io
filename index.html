@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ray Manipulation and Interpolation in NeRFs for Object Manipulation and Scene Inpainting</title>
+    <title>Ray Editing and Interpolation in NeRFs for Object Manipulation and Scene Inpainting</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -54,7 +54,7 @@
       <div class="container">
         <div class="row">
           <div class="col-14">
-            <h2>Ray Manipulation and Interpolation in NeRFs <br> for Object Manipulation and Scene Inpainting</h2>
+            <h2>Ray Editing and Interpolation in NeRFs <br> for Object Editing and Scene Inpainting</h2>
             <!-- <h4 style="color:#5a6268;">CVPR 2022</h4> -->
             <hr>
             <h6>
@@ -76,12 +76,12 @@
             <hr style="margin-top:0px">
             <!-- <img class="img-fluid" src="images/teasor.png" alt="teasor" height="60%"> -->
           <p class="text-justify">
-            Manipulating objects and inpainting empty regions in scenes are challenging for NeRF models due to limited manipulation supervision and difficulty in aligning geometry and appearance in an implicit representation. 
-            We address these challenges by implementing a point-based NeRF pipeline that combines explicit point clouds with implicit volumes, providing a general solution for flexible object manipulation without additional supervision and enhances the interactions between manipulated regions and surrounding areas.
-            We explore an implicit Ray Manipulation (RM) mechanism that allows for direct manipulation of a 3D object's pose by operating on neural points along NeRF rays. 
-            Additionally, we introduce a plug-and-play module for the inpainting process, dubbed Ray Interpolation (RI), which interpolates manipulated regions by aggregating features from surrounding rays to achieve coherent geometry and texture. 
-            Our proposed point-based NeRF pipeline, RaMI-NeRF, incorporates ray transformation and interpolation, enabling high-quality visual rendering for diverse editing operations without requiring supervision. 
-            Results on 3D object manipulation and scene inpainting tasks demonstrate that our pipeline achieves state-of-the-art performance.
+            Editing objects and inpainting empty regions in scenes are challenging for NeRF models due to limited editing supervision and difficulty in aligning geometry and appearance in an implicit representation. 
+            We address these challenges by implementing a point-based NeRF pipeline that combines explicit point clouds with implicit volumes, providing a general solution for flexible object editing without additional supervision and enhances the interactions between edited regions and surrounding areas.
+            We explore an implicit Ray Editing (RE) mechanism that allows for direct editing of a 3D object's pose by operating on neural points along NeRF rays. 
+            Additionally, we introduce a plug-and-play module for the inpainting process, dubbed Ray Interpolation (RI), which interpolates edited regions by aggregating features from surrounding rays to achieve coherent geometry and texture. 
+            Our proposed point-based NeRF pipeline, REI-NeRF, incorporates ray editing and interpolation, enabling high-quality visual rendering for diverse editing operations without requiring supervision. 
+            Results on 3D object editing and scene inpainting tasks demonstrate that our pipeline achieves state-of-the-art performance.
           </p>
         </div>
       </div>
