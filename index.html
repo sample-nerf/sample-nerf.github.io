@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Point Resampling and Ray Transformation Aid to Editable NeRF Models</title>
+    <title>Ray Manipulation and Interpolation in NeRFs for Object Manipulation and Scene Inpainting</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -54,7 +54,7 @@
       <div class="container">
         <div class="row">
           <div class="col-14">
-            <h2>Point Resampling and Ray Transformation <br> Aid to Editable NeRF Models</h2>
+            <h2>Ray Manipulation and Interpolation in NeRFs <br> for Object Manipulation and Scene Inpainting</h2>
             <!-- <h4 style="color:#5a6268;">CVPR 2022</h4> -->
             <hr>
             <h6>
@@ -76,7 +76,12 @@
             <hr style="margin-top:0px">
             <!-- <img class="img-fluid" src="images/teasor.png" alt="teasor" height="60%"> -->
           <p class="text-justify">
-            In NeRF-aided editing tasks, object movement presents difficulties in supervision generation due to the introduction of variability in object positions. Moreover, the removal operations of certain scene objects often lead to empty regions, presenting challenges for NeRF models in inpainting them effectively. We propose an implicit ray transformation strategy, allowing for direct manipulation of the 3D object's pose by operating on the neural-point in NeRF rays. To address the challenge of inpainting potential empty regions, we present a plug-and-play inpainting model, dubbed differentiable neural-point resampling (DNR), which interpolates those regions in 3D space at the original ray locations within the implicit space, thereby facilitating object removal & scene inpainting tasks. Importantly, employing DNR effectively narrows the gap between ground truth and predicted implicit features, potentially increasing the mutual information (MI) of the features across rays. Then, we leverage DNR and ray transformation to construct a point-based editable NeRF pipeline (PR^2T-NeRF). Results primarily evaluated on 3D object removal & inpainting tasks indicate that our pipeline achieves state-of-the-art performance. In addition, our pipeline supports high-quality rendering visualization for diverse editing operations without necessitating extra supervision.
+            Manipulating objects and inpainting empty regions in scenes are challenging for NeRF models due to limited manipulation supervision and difficulty in aligning geometry and appearance in an implicit representation. 
+            We address these challenges by implementing a point-based NeRF pipeline that combines explicit point clouds with implicit volumes, providing a general solution for flexible object manipulation without additional supervision and enhances the interactions between manipulated regions and surrounding areas.
+            We explore an implicit \emph{Ray Manipulation (RM)} mechanism that allows for direct manipulation of a 3D object's pose by operating on neural points along NeRF rays. 
+            Additionally, we introduce a plug-and-play module for the inpainting process, dubbed \emph{Ray Interpolation (RI)}, which interpolates manipulated regions by aggregating features from surrounding rays to achieve coherent geometry and texture. 
+            Our proposed point-based NeRF pipeline, \model, incorporates ray transformation and interpolation, enabling high-quality visual rendering for diverse editing operations without requiring supervision. 
+            Results on 3D object manipulation and scene inpainting tasks demonstrate that our pipeline achieves state-of-the-art performance.
           </p>
         </div>
       </div>
@@ -90,7 +95,7 @@
         <div class="col-12 text-center">          
           <h3>Demo Videos</h3>
             <hr style="margin-top:1.cm">
-            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980">Rendering Results on SPIn-NeRF, IBRNet and Remove-NeRF data</h3>
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980">(Removal & Inpainting) Results on SPIn-NeRF, IBRNet and Remove-NeRF data</h3>
             <h4 style="margin-top:20px; margin-bottom:20px; color:#000000">SPIn-NeRF</h4>
               <div class="row flex-container">
                   <div class="video-container">
@@ -247,7 +252,7 @@
               </div>
 
             <hr style="margin-top:1.cm">
-            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980">Ray Transformations Novel Views Rendering</h3>
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980">(Transformation & Inpainting) Novel Views Rendering for various Transformations</h3>
 
             <div class="row flex-container">
               <div class="video-container">
@@ -330,8 +335,8 @@
             </div>
 
             <hr style="margin-top:1.cm">
-            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980">Point Cloud Optimization after Ray Transformation and Point Resampling</h3>
-            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Without DNR</h4>
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980">Comparison of Scene Optimization Techniques for Ray Interpolation</h3>
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Without RI</h4>
 
             <div class="row flex-container">
               <div class="video-container">
@@ -376,7 +381,7 @@
                 </video>
               </div>
 
-            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">With DNR</h4>
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">With RI</h4>
             <div class="row flex-container">
               <div class="video-container">
                 <video autoplay controls muted loop playsinline width="100%">
@@ -429,7 +434,6 @@
 			<!-- <h2>Citation</h2> -->
 			  <!-- <hr style="margin-top:0px"> -->
 			  <div class="card-footer">
-          xxx
 			  </div>
 			  <hr>
 		</div>
